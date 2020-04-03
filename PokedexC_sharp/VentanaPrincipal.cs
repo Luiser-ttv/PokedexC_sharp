@@ -24,6 +24,9 @@ namespace PokedexC_sharp
             setPokemonInfo(1);
             pokemonPorNombre = miConexion.getPokemonPorNombre("Bulbasaur");
             Console.WriteLine(pokemonPorNombre.Rows[0]["id"].ToString());
+
+            nombrePokemon.Parent = pictureBox1;
+            nombrePokemon.BackColor = Color.Transparent;
         }
 
         private void boton_izq_Click(object sender, EventArgs e)
@@ -53,9 +56,9 @@ namespace PokedexC_sharp
         {
             misPokemons = miConexion.getPokemonPorId(id);
             nombrePokemon.Text = "Nombre: " + misPokemons.Rows[0]["nombre"].ToString();
-            numPokedex.Text = "Numero de Pokedex: " + misPokemons.Rows[0]["id"].ToString() + "º";
-            pesoPokemon.Text = "Peso: " + misPokemons.Rows[0]["peso"].ToString() + " kg";
+            numPokedex.Text = "Numero de Pokedex: " + misPokemons.Rows[0]["id"].ToString() + "º";         
             alturaPokemon.Text = "Altura: " + misPokemons.Rows[0]["altura"].ToString() + " m";
+            pesoPokemon.Text = "Peso: " + misPokemons.Rows[0]["peso"].ToString() + " kg";
             especiePokemon.Text = "Especie: " + misPokemons.Rows[0]["especie"].ToString();
             habitatPokemon.Text = "Habitat: " + misPokemons.Rows[0]["habitat"].ToString();
             tipoPokemon.Text = "Tipo: " + misPokemons.Rows[0]["tipo1"].ToString() + (!"".Equals(misPokemons.Rows[0]["tipo2"].ToString()) ? (" / " + misPokemons.Rows[0]["tipo2"].ToString()) : "");
