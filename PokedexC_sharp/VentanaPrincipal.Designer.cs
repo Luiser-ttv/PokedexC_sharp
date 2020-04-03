@@ -44,6 +44,8 @@
             this.numPokedex = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -60,23 +62,24 @@
             // 
             // boton_izq
             // 
+            this.boton_izq.BackColor = System.Drawing.Color.Transparent;
             this.boton_izq.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.boton_izq.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.boton_izq.Location = new System.Drawing.Point(152, 467);
             this.boton_izq.Name = "boton_izq";
             this.boton_izq.Size = new System.Drawing.Size(38, 23);
             this.boton_izq.TabIndex = 1;
-            this.boton_izq.Text = "button1";
-            this.boton_izq.UseVisualStyleBackColor = true;
+            this.boton_izq.UseVisualStyleBackColor = false;
             this.boton_izq.Click += new System.EventHandler(this.boton_izq_Click);
             // 
             // boton_der
             // 
             this.boton_der.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.boton_der.Location = new System.Drawing.Point(217, 467);
+            this.boton_der.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.boton_der.Location = new System.Drawing.Point(218, 467);
             this.boton_der.Name = "boton_der";
-            this.boton_der.Size = new System.Drawing.Size(41, 23);
+            this.boton_der.Size = new System.Drawing.Size(39, 23);
             this.boton_der.TabIndex = 2;
-            this.boton_der.Text = "button2";
             this.boton_der.UseVisualStyleBackColor = true;
             this.boton_der.Click += new System.EventHandler(this.boton_der_Click);
             // 
@@ -154,7 +157,7 @@
             // movimientoPokemon
             // 
             this.movimientoPokemon.AutoSize = true;
-            this.movimientoPokemon.Location = new System.Drawing.Point(308, 525);
+            this.movimientoPokemon.Location = new System.Drawing.Point(297, 519);
             this.movimientoPokemon.Name = "movimientoPokemon";
             this.movimientoPokemon.Size = new System.Drawing.Size(35, 13);
             this.movimientoPokemon.TabIndex = 11;
@@ -180,19 +183,42 @@
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(189, 428);
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(751, 450);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(28, 35);
+            this.button1.Size = new System.Drawing.Size(59, 64);
             this.button1.TabIndex = 14;
             this.button1.Text = "button3";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Location = new System.Drawing.Point(189, 428);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(29, 35);
+            this.button2.TabIndex = 15;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Location = new System.Drawing.Point(191, 496);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(27, 36);
+            this.button3.TabIndex = 16;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1027, 654);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.numPokedex);
@@ -235,6 +261,8 @@
         private System.Windows.Forms.Label numPokedex;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 

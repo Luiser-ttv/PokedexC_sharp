@@ -25,8 +25,36 @@ namespace PokedexC_sharp
             pokemonPorNombre = miConexion.getPokemonPorNombre("Bulbasaur");
             Console.WriteLine(pokemonPorNombre.Rows[0]["id"].ToString());
 
+            ///
+            ///labels transparentes
+            ///
             nombrePokemon.Parent = pictureBox1;
             nombrePokemon.BackColor = Color.Transparent;
+
+            numPokedex.Parent = pictureBox1;
+            numPokedex.BackColor = Color.Transparent;
+
+            pesoPokemon.Parent = pictureBox1;
+            pesoPokemon.BackColor = Color.Transparent;
+
+            alturaPokemon.Parent = pictureBox1;
+            alturaPokemon.BackColor = Color.Transparent;
+
+            especiePokemon.Parent = pictureBox1;
+            especiePokemon.BackColor = Color.Transparent;
+
+            habilidadPokemon.Parent = pictureBox1;
+            habilidadPokemon.BackColor = Color.Transparent;
+
+            tipoPokemon.Parent = pictureBox1;
+            tipoPokemon.BackColor = Color.Transparent;
+
+            habitatPokemon.Parent = pictureBox1;
+            habitatPokemon.BackColor = Color.Transparent;
+
+            movimientoPokemon.Parent = pictureBox1;
+            movimientoPokemon.BackColor = Color.Transparent;
+
         }
 
         private void boton_izq_Click(object sender, EventArgs e)
@@ -56,7 +84,7 @@ namespace PokedexC_sharp
         {
             misPokemons = miConexion.getPokemonPorId(id);
             nombrePokemon.Text = "Nombre: " + misPokemons.Rows[0]["nombre"].ToString();
-            numPokedex.Text = "Numero de Pokedex: " + misPokemons.Rows[0]["id"].ToString() + "º";         
+            numPokedex.Text = "Numero de Pokedex: " + misPokemons.Rows[0]["id"].ToString();         
             alturaPokemon.Text = "Altura: " + misPokemons.Rows[0]["altura"].ToString() + " m";
             pesoPokemon.Text = "Peso: " + misPokemons.Rows[0]["peso"].ToString() + " kg";
             especiePokemon.Text = "Especie: " + misPokemons.Rows[0]["especie"].ToString();
@@ -97,6 +125,14 @@ namespace PokedexC_sharp
             ventana.Show();
         }
 
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            setPokemonInfo(1);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            setPokemonInfo(151);
+        }
     }
 }
