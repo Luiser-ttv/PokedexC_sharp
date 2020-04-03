@@ -28,13 +28,205 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.boton_izq = new System.Windows.Forms.Button();
+            this.boton_der = new System.Windows.Forms.Button();
+            this.nombrePokemon = new System.Windows.Forms.Label();
+            this.fotoPokemon = new System.Windows.Forms.PictureBox();
+            this.pesoPokemon = new System.Windows.Forms.Label();
+            this.alturaPokemon = new System.Windows.Forms.Label();
+            this.especiePokemon = new System.Windows.Forms.Label();
+            this.habitatPokemon = new System.Windows.Forms.Label();
+            this.tipoPokemon = new System.Windows.Forms.Label();
+            this.habilidadPokemon = new System.Windows.Forms.Label();
+            this.movimientoPokemon = new System.Windows.Forms.Label();
+            this.numPokedex = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoPokemon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(4, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1020, 598);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // boton_izq
+            // 
+            this.boton_izq.Location = new System.Drawing.Point(65, 247);
+            this.boton_izq.Name = "boton_izq";
+            this.boton_izq.Size = new System.Drawing.Size(75, 23);
+            this.boton_izq.TabIndex = 1;
+            this.boton_izq.Text = "button1";
+            this.boton_izq.UseVisualStyleBackColor = true;
+            // 
+            // boton_der
+            // 
+            this.boton_der.Location = new System.Drawing.Point(175, 247);
+            this.boton_der.Name = "boton_der";
+            this.boton_der.Size = new System.Drawing.Size(75, 23);
+            this.boton_der.TabIndex = 2;
+            this.boton_der.Text = "button2";
+            this.boton_der.UseVisualStyleBackColor = true;
+            // 
+            // nombrePokemon
+            // 
+            this.nombrePokemon.AutoSize = true;
+            this.nombrePokemon.Location = new System.Drawing.Point(65, 183);
+            this.nombrePokemon.Name = "nombrePokemon";
+            this.nombrePokemon.Size = new System.Drawing.Size(35, 13);
+            this.nombrePokemon.TabIndex = 3;
+            this.nombrePokemon.Text = "label1";
+            // 
+            // fotoPokemon
+            // 
+            this.fotoPokemon.Location = new System.Drawing.Point(84, 38);
+            this.fotoPokemon.Name = "fotoPokemon";
+            this.fotoPokemon.Size = new System.Drawing.Size(180, 115);
+            this.fotoPokemon.TabIndex = 4;
+            this.fotoPokemon.TabStop = false;
+            // 
+            // pesoPokemon
+            // 
+            this.pesoPokemon.AutoSize = true;
+            this.pesoPokemon.Location = new System.Drawing.Point(473, 183);
+            this.pesoPokemon.Name = "pesoPokemon";
+            this.pesoPokemon.Size = new System.Drawing.Size(35, 13);
+            this.pesoPokemon.TabIndex = 5;
+            this.pesoPokemon.Text = "label1";
+            // 
+            // alturaPokemon
+            // 
+            this.alturaPokemon.AutoSize = true;
+            this.alturaPokemon.Location = new System.Drawing.Point(577, 220);
+            this.alturaPokemon.Name = "alturaPokemon";
+            this.alturaPokemon.Size = new System.Drawing.Size(35, 13);
+            this.alturaPokemon.TabIndex = 6;
+            this.alturaPokemon.Text = "label2";
+            // 
+            // especiePokemon
+            // 
+            this.especiePokemon.AutoSize = true;
+            this.especiePokemon.Location = new System.Drawing.Point(462, 256);
+            this.especiePokemon.Name = "especiePokemon";
+            this.especiePokemon.Size = new System.Drawing.Size(35, 13);
+            this.especiePokemon.TabIndex = 7;
+            this.especiePokemon.Text = "label3";
+            // 
+            // habitatPokemon
+            // 
+            this.habitatPokemon.AutoSize = true;
+            this.habitatPokemon.Location = new System.Drawing.Point(569, 256);
+            this.habitatPokemon.Name = "habitatPokemon";
+            this.habitatPokemon.Size = new System.Drawing.Size(35, 13);
+            this.habitatPokemon.TabIndex = 8;
+            this.habitatPokemon.Text = "label4";
+            // 
+            // tipoPokemon
+            // 
+            this.tipoPokemon.AutoSize = true;
+            this.tipoPokemon.Location = new System.Drawing.Point(533, 350);
+            this.tipoPokemon.Name = "tipoPokemon";
+            this.tipoPokemon.Size = new System.Drawing.Size(35, 13);
+            this.tipoPokemon.TabIndex = 9;
+            this.tipoPokemon.Text = "label1";
+            // 
+            // habilidadPokemon
+            // 
+            this.habilidadPokemon.AutoSize = true;
+            this.habilidadPokemon.Location = new System.Drawing.Point(456, 393);
+            this.habilidadPokemon.Name = "habilidadPokemon";
+            this.habilidadPokemon.Size = new System.Drawing.Size(35, 13);
+            this.habilidadPokemon.TabIndex = 10;
+            this.habilidadPokemon.Text = "label1";
+            // 
+            // movimientoPokemon
+            // 
+            this.movimientoPokemon.AutoSize = true;
+            this.movimientoPokemon.Location = new System.Drawing.Point(509, 413);
+            this.movimientoPokemon.Name = "movimientoPokemon";
+            this.movimientoPokemon.Size = new System.Drawing.Size(35, 13);
+            this.movimientoPokemon.TabIndex = 11;
+            this.movimientoPokemon.Text = "label2";
+            // 
+            // numPokedex
+            // 
+            this.numPokedex.AutoSize = true;
+            this.numPokedex.Location = new System.Drawing.Point(572, 412);
+            this.numPokedex.Name = "numPokedex";
+            this.numPokedex.Size = new System.Drawing.Size(35, 13);
+            this.numPokedex.TabIndex = 12;
+            this.numPokedex.Text = "label1";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(407, 68);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 13;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(531, 114);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "button3";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // VentanaPrincipal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1027, 606);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.numPokedex);
+            this.Controls.Add(this.movimientoPokemon);
+            this.Controls.Add(this.habilidadPokemon);
+            this.Controls.Add(this.tipoPokemon);
+            this.Controls.Add(this.habitatPokemon);
+            this.Controls.Add(this.especiePokemon);
+            this.Controls.Add(this.alturaPokemon);
+            this.Controls.Add(this.pesoPokemon);
+            this.Controls.Add(this.fotoPokemon);
+            this.Controls.Add(this.nombrePokemon);
+            this.Controls.Add(this.boton_der);
+            this.Controls.Add(this.boton_izq);
+            this.Controls.Add(this.pictureBox1);
+            this.Name = "VentanaPrincipal";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoPokemon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button boton_izq;
+        private System.Windows.Forms.Button boton_der;
+        private System.Windows.Forms.Label nombrePokemon;
+        private System.Windows.Forms.PictureBox fotoPokemon;
+        private System.Windows.Forms.Label pesoPokemon;
+        private System.Windows.Forms.Label alturaPokemon;
+        private System.Windows.Forms.Label especiePokemon;
+        private System.Windows.Forms.Label habitatPokemon;
+        private System.Windows.Forms.Label tipoPokemon;
+        private System.Windows.Forms.Label habilidadPokemon;
+        private System.Windows.Forms.Label movimientoPokemon;
+        private System.Windows.Forms.Label numPokedex;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
