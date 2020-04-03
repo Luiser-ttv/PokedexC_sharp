@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-
+///Luis Rioja
 namespace PokedexC_sharp
 {
     class Conexion
