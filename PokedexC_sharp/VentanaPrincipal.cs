@@ -28,31 +28,23 @@ namespace PokedexC_sharp
             ///
             ///labels transparentes
             ///
-            nombrePokemon.Parent = pictureBox1;
+
             nombrePokemon.BackColor = Color.Transparent;
 
-            numPokedex.Parent = pictureBox1;
             numPokedex.BackColor = Color.Transparent;
 
-            pesoPokemon.Parent = pictureBox1;
             pesoPokemon.BackColor = Color.Transparent;
 
-            alturaPokemon.Parent = pictureBox1;
             alturaPokemon.BackColor = Color.Transparent;
 
-            especiePokemon.Parent = pictureBox1;
             especiePokemon.BackColor = Color.Transparent;
 
-            habilidadPokemon.Parent = pictureBox1;
             habilidadPokemon.BackColor = Color.Transparent;
 
-            tipoPokemon.Parent = pictureBox1;
             tipoPokemon.BackColor = Color.Transparent;
 
-            habitatPokemon.Parent = pictureBox1;
             habitatPokemon.BackColor = Color.Transparent;
 
-            movimientoPokemon.Parent = pictureBox1;
             movimientoPokemon.BackColor = Color.Transparent;
 
         }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPrincipal));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.boton_izq = new System.Windows.Forms.Button();
             this.boton_der = new System.Windows.Forms.Button();
             this.nombrePokemon = new System.Windows.Forms.Label();
@@ -46,26 +45,20 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoPokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1020, 647);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // boton_izq
             // 
             this.boton_izq.BackColor = System.Drawing.Color.Transparent;
             this.boton_izq.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.boton_izq.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.boton_izq.Location = new System.Drawing.Point(152, 467);
+            this.boton_izq.FlatAppearance.BorderSize = 0;
+            this.boton_izq.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.boton_izq.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.boton_izq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.boton_izq.ForeColor = System.Drawing.Color.Transparent;
+            this.boton_izq.Location = new System.Drawing.Point(146, 467);
             this.boton_izq.Name = "boton_izq";
             this.boton_izq.Size = new System.Drawing.Size(38, 23);
             this.boton_izq.TabIndex = 1;
@@ -74,13 +67,18 @@
             // 
             // boton_der
             // 
+            this.boton_der.BackColor = System.Drawing.Color.Transparent;
             this.boton_der.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.boton_der.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.boton_der.FlatAppearance.BorderSize = 0;
+            this.boton_der.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.boton_der.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.boton_der.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.boton_der.ForeColor = System.Drawing.Color.Transparent;
             this.boton_der.Location = new System.Drawing.Point(218, 467);
             this.boton_der.Name = "boton_der";
             this.boton_der.Size = new System.Drawing.Size(39, 23);
             this.boton_der.TabIndex = 2;
-            this.boton_der.UseVisualStyleBackColor = true;
+            this.boton_der.UseVisualStyleBackColor = false;
             this.boton_der.Click += new System.EventHandler(this.boton_der_Click);
             // 
             // nombrePokemon
@@ -88,12 +86,12 @@
             this.nombrePokemon.AutoSize = true;
             this.nombrePokemon.Location = new System.Drawing.Point(308, 381);
             this.nombrePokemon.Name = "nombrePokemon";
-            this.nombrePokemon.Size = new System.Drawing.Size(35, 13);
+            this.nombrePokemon.Size = new System.Drawing.Size(0, 13);
             this.nombrePokemon.TabIndex = 3;
-            this.nombrePokemon.Text = "label1";
             // 
             // fotoPokemon
             // 
+            this.fotoPokemon.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.fotoPokemon.Location = new System.Drawing.Point(366, 73);
             this.fotoPokemon.Name = "fotoPokemon";
             this.fotoPokemon.Size = new System.Drawing.Size(166, 165);
@@ -105,72 +103,64 @@
             this.pesoPokemon.AutoSize = true;
             this.pesoPokemon.Location = new System.Drawing.Point(308, 413);
             this.pesoPokemon.Name = "pesoPokemon";
-            this.pesoPokemon.Size = new System.Drawing.Size(35, 13);
+            this.pesoPokemon.Size = new System.Drawing.Size(0, 13);
             this.pesoPokemon.TabIndex = 5;
-            this.pesoPokemon.Text = "label1";
             // 
             // alturaPokemon
             // 
             this.alturaPokemon.AutoSize = true;
             this.alturaPokemon.Location = new System.Drawing.Point(456, 413);
             this.alturaPokemon.Name = "alturaPokemon";
-            this.alturaPokemon.Size = new System.Drawing.Size(35, 13);
+            this.alturaPokemon.Size = new System.Drawing.Size(0, 13);
             this.alturaPokemon.TabIndex = 6;
-            this.alturaPokemon.Text = "label2";
             // 
             // especiePokemon
             // 
             this.especiePokemon.AutoSize = true;
             this.especiePokemon.Location = new System.Drawing.Point(308, 450);
             this.especiePokemon.Name = "especiePokemon";
-            this.especiePokemon.Size = new System.Drawing.Size(35, 13);
+            this.especiePokemon.Size = new System.Drawing.Size(0, 13);
             this.especiePokemon.TabIndex = 7;
-            this.especiePokemon.Text = "label3";
             // 
             // habitatPokemon
             // 
             this.habitatPokemon.AutoSize = true;
             this.habitatPokemon.Location = new System.Drawing.Point(456, 488);
             this.habitatPokemon.Name = "habitatPokemon";
-            this.habitatPokemon.Size = new System.Drawing.Size(35, 13);
+            this.habitatPokemon.Size = new System.Drawing.Size(0, 13);
             this.habitatPokemon.TabIndex = 8;
-            this.habitatPokemon.Text = "label4";
             // 
             // tipoPokemon
             // 
             this.tipoPokemon.AutoSize = true;
             this.tipoPokemon.Location = new System.Drawing.Point(308, 488);
             this.tipoPokemon.Name = "tipoPokemon";
-            this.tipoPokemon.Size = new System.Drawing.Size(35, 13);
+            this.tipoPokemon.Size = new System.Drawing.Size(0, 13);
             this.tipoPokemon.TabIndex = 9;
-            this.tipoPokemon.Text = "label1";
             // 
             // habilidadPokemon
             // 
             this.habilidadPokemon.AutoSize = true;
             this.habilidadPokemon.Location = new System.Drawing.Point(456, 450);
             this.habilidadPokemon.Name = "habilidadPokemon";
-            this.habilidadPokemon.Size = new System.Drawing.Size(35, 13);
+            this.habilidadPokemon.Size = new System.Drawing.Size(0, 13);
             this.habilidadPokemon.TabIndex = 10;
-            this.habilidadPokemon.Text = "label1";
             // 
             // movimientoPokemon
             // 
             this.movimientoPokemon.AutoSize = true;
             this.movimientoPokemon.Location = new System.Drawing.Point(297, 519);
             this.movimientoPokemon.Name = "movimientoPokemon";
-            this.movimientoPokemon.Size = new System.Drawing.Size(35, 13);
+            this.movimientoPokemon.Size = new System.Drawing.Size(0, 13);
             this.movimientoPokemon.TabIndex = 11;
-            this.movimientoPokemon.Text = "label2";
             // 
             // numPokedex
             // 
             this.numPokedex.AutoSize = true;
             this.numPokedex.Location = new System.Drawing.Point(456, 381);
             this.numPokedex.Name = "numPokedex";
-            this.numPokedex.Size = new System.Drawing.Size(35, 13);
+            this.numPokedex.Size = new System.Drawing.Size(0, 13);
             this.numPokedex.TabIndex = 12;
-            this.numPokedex.Text = "label1";
             // 
             // pictureBox2
             // 
@@ -182,41 +172,57 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(751, 450);
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(742, 450);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(59, 64);
+            this.button1.Size = new System.Drawing.Size(64, 64);
             this.button1.TabIndex = 14;
-            this.button1.Text = "button3";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // button2
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
             this.button2.Location = new System.Drawing.Point(189, 428);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(29, 35);
             this.button2.TabIndex = 15;
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(191, 496);
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.Transparent;
+            this.button3.Location = new System.Drawing.Point(189, 496);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(27, 36);
             this.button3.TabIndex = 16;
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 654);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(917, 637);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -233,10 +239,8 @@
             this.Controls.Add(this.nombrePokemon);
             this.Controls.Add(this.boton_der);
             this.Controls.Add(this.boton_izq);
-            this.Controls.Add(this.pictureBox1);
             this.Name = "VentanaPrincipal";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotoPokemon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -245,8 +249,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button boton_izq;
         private System.Windows.Forms.Button boton_der;
         private System.Windows.Forms.Label nombrePokemon;
