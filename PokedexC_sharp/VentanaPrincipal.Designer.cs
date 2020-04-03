@@ -149,7 +149,7 @@
             // movimientoPokemon
             // 
             this.movimientoPokemon.AutoSize = true;
-            this.movimientoPokemon.Location = new System.Drawing.Point(297, 519);
+            this.movimientoPokemon.Location = new System.Drawing.Point(308, 519);
             this.movimientoPokemon.Name = "movimientoPokemon";
             this.movimientoPokemon.Size = new System.Drawing.Size(0, 13);
             this.movimientoPokemon.TabIndex = 11;

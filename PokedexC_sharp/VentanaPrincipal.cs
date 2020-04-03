@@ -88,10 +88,10 @@ namespace PokedexC_sharp
 
             for (int i = 2; i < 5; i++)
             {
-                movimiento += !"".Equals(misPokemons.Rows[0]["movimiento" + i].ToString()) ? (" / " + misPokemons.Rows[0]["movimiento" + i].ToString()) : "";
+                movimiento += !"".Equals(misPokemons.Rows[0]["movimiento" + i].ToString()) ? (", " + misPokemons.Rows[0]["movimiento" + i].ToString()) : "";
             }
 
-            movimientoPokemon.Text = "Movimientos: " + movimiento;
+            movimientoPokemon.Text = "Movs: " + movimiento;
 
             fotoPokemon.Image = convierteBlobImagen((byte[])misPokemons.Rows[0]["imagen"]);
         }
